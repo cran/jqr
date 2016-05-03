@@ -4,7 +4,7 @@ Description: Client for 'jq', a JSON processor (<http://stedolan.github.io/jq/>)
     in C. 'jq' allows the following with JSON data: index into, parse, do calculations,
     cut up and filter, change key names and values, perform conditionals and comparisons,
     and more.
-Version: 0.2.0
+Version: 0.2.2
 Depends: R (>= 3.1.2)
 License: MIT + file LICENSE
 LazyData: true
@@ -28,7 +28,7 @@ Imports: Rcpp, lazyeval, magrittr
 Suggests: jsonlite, testthat, knitr, covr
 RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2016-03-23 21:53:13 UTC; sacmac
+Packaged: 2016-05-02 23:24:06 UTC; sacmac
 Author: Rich FitzJohn [aut],
   Scott Chamberlain [aut, cre],
   Stefan Milton Bache [aut],
@@ -38,4 +38,4 @@ Author: Rich FitzJohn [aut],
   David M Gay [ctb, cph] (code in src/jv_dtoa.c)
 Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-03-23 23:24:25
+Date/Publication: 2016-05-03 01:56:17
