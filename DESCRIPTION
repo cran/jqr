@@ -4,12 +4,13 @@ Description: Client for 'jq', a JSON processor (<http://stedolan.github.io/jq/>)
     in C. 'jq' allows the following with JSON data: index into, parse, do calculations,
     cut up and filter, change key names and values, perform conditionals and comparisons,
     and more.
-Version: 0.2.3
+Version: 0.2.4
 Depends: R (>= 3.1.2)
 License: MIT + file LICENSE
 LazyData: true
 Authors@R: c(person("Rich", "FitzJohn", role = "aut",
     email = "rich.fitzjohn@gmail.com"),
+    person("Jeroen", "Ooms", role = "aut"),
     person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com"),
     person("Stefan Milton Bache", role = "aut",
@@ -20,7 +21,6 @@ Authors@R: c(person("Rich", "FitzJohn", role = "aut",
     person("Free Software Foundation", role = c("ctb","cph"), comment = "parser code in src/parser.c"),
     person("David M", "Gay", role = c("ctb","cph"), comment = "code in src/jv_dtoa.c"))
 VignetteBuilder: knitr
-SystemRequirements: GNU make
 URL: https://github.com/ropensci/jqr
 BugReports: https://github.com/ropensci/jqr/issues
 LinkingTo: BH, Rcpp
@@ -28,8 +28,9 @@ Imports: Rcpp, lazyeval, magrittr
 Suggests: jsonlite, testthat, knitr, covr
 RoxygenNote: 5.0.1
 NeedsCompilation: yes
-Packaged: 2016-05-10 00:18:26 UTC; sacmac
+Packaged: 2016-07-28 20:43:39 UTC; jeroen
 Author: Rich FitzJohn [aut],
+  Jeroen Ooms [aut],
   Scott Chamberlain [aut, cre],
   Stefan Milton Bache [aut],
   Stephen Dolan [aut, cph] (jq library),
@@ -38,4 +39,4 @@ Author: Rich FitzJohn [aut],
   David M Gay [ctb, cph] (code in src/jv_dtoa.c)
 Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-05-10 06:56:47
+Date/Publication: 2016-07-29 06:41:07
