@@ -71,7 +71,7 @@ str3 %>% haskey(1,2)
 '{"foo": 5, "bar": 7}' %>% select(a = .foo)
 
 ## ------------------------------------------------------------------------
-githubcommits %>%
+commits %>%
   index() %>%
   select(sha = .sha, name = .commit.committer.name)
 

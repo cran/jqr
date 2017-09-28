@@ -555,9 +555,9 @@ str3 %&gt;% haskey(1,2)
 #&gt; }
 </code></pre>
 
-<p>More complicated <code>select()</code>, using the included dataset <code>githubcommits</code></p>
+<p>More complicated <code>select()</code>, using the included dataset <code>commits</code></p>
 
-<pre><code class="r">githubcommits %&gt;%
+<pre><code class="r">commits %&gt;%
   index() %&gt;%
   select(sha = .sha, name = .commit.committer.name)
 #&gt; [
