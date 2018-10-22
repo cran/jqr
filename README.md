@@ -3,9 +3,10 @@ jqr
 
 
 
-[![Build Status](https://travis-ci.org/ropensci/jqr.png?branch=master)](https://travis-ci.org/ropensci/jqr)
+[![Build Status](https://travis-ci.org/ropensci/jqr.svg?branch=master)](https://travis-ci.org/ropensci/jqr)
 [![Build status](https://ci.appveyor.com/api/projects/status/tfwpiaotu24sotxg?svg=true)](https://ci.appveyor.com/project/sckott/jqr)
 [![Coverage Status](https://coveralls.io/repos/ropensci/jqr/badge.svg?branch=master)](https://coveralls.io/r/ropensci/jqr?branch=master)
+[![cran checks](https://cranchecks.info/badges/worst/jqr)](https://cranchecks.info/pkgs/jqr)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/jqr?color=0DA6CD)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/jqr)](https://cran.r-project.org/package=jqr)
 
@@ -16,6 +17,42 @@ convert from json to R, or without using regular expressions.  This
 means that the eventual loading into R can be quicker.
 
  - Introduction vignette at <https://cran.r-project.org/package=jqr>
+
+## Quickstart Tutorial
+
+The `jq` command line examples from the [jq tutorial](https://stedolan.github.io/jq/tutorial/) work exactly the same in R! 
+
+
+```r
+library(curl)
+library(jqr)
+curl('https://api.github.com/repos/ropensci/jqr/commits?per_page=5') %>%
+  jq('.[] | {message: .commit.message, name: .commit.committer.name}')
+#> [
+#>     {
+#>         "message": "Bump Travis",
+#>         "name": "Jeroen Ooms"
+#>     },
+#>     {
+#>         "message": "Fix for GCC-8 stringop-truncation warning",
+#>         "name": "Jeroen Ooms"
+#>     },
+#>     {
+#>         "message": "update cran comments",
+#>         "name": "Scott Chamberlain"
+#>     },
+#>     {
+#>         "message": "tweaks to man files",
+#>         "name": "Scott Chamberlain"
+#>     },
+#>     {
+#>         "message": "Fix travis file?",
+#>         "name": "Jeroen"
+#>     }
+#> ]
+```
+
+Try running some of the [other examples](https://stedolan.github.io/jq/tutorial/).
 
 ## Installation
 
@@ -307,7 +344,7 @@ x %>% index()
 #>         "More JQ"
 #>     ]
 #> ]
-x %>% select(user, title = `.titles[]`)
+x %>% build_object(user, title = `.titles[]`)
 #> [
 #>     {
 #>         "user": "stedolan",
@@ -367,6 +404,14 @@ startswith
 
 ```r
 '["fo", "foo", "barfoo", "foobar", "barfoob"]' %>% index %>% startswith(foo)
+#> [
+#>     false,
+#>     true,
+#>     false,
+#>     true,
+#>     false
+#> ]
+'["fo", "foo"] ["barfoo", "foobar", "barfoob"]' %>% index %>% startswith(foo)
 #> [
 #>     false,
 #>     true,
@@ -442,6 +487,52 @@ unique
 #>     2,
 #>     3,
 #>     5
+#> ]
+```
+
+
+#### filter
+
+With filtering via `select()` you can use various operators, like `==`, 
+`&&`, `||`. We translate these internally for you to what `jq` wants 
+to see (`==`, `and`, `or`).
+
+Simple, one condition
+
+
+```r
+'{"foo": 4, "bar": 7}' %>% select(.foo == 4)
+#> {
+#>     "foo": 4,
+#>     "bar": 7
+#> }
+```
+
+More complicated. Combine more than one condition; combine each individual
+filtering task in parentheses
+
+
+```r
+x <- '{"foo": 4, "bar": 2} {"foo": 5, "bar": 4} {"foo": 8, "bar": 12}'
+x %>% select((.foo < 6) && (.bar > 3))
+#> {
+#>     "foo": 5,
+#>     "bar": 4
+#> }
+x %>% select((.foo < 6) || (.bar > 3))
+#> [
+#>     {
+#>         "foo": 4,
+#>         "bar": 2
+#>     },
+#>     {
+#>         "foo": 5,
+#>         "bar": 4
+#>     },
+#>     {
+#>         "foo": 8,
+#>         "bar": 12
+#>     }
 #> ]
 ```
 
@@ -524,23 +615,23 @@ str3 %>% haskey(1,2)
 #> ]
 ```
 
-Select variables by name, and rename
+Build an object, selecting variables by name, and rename
 
 
 ```r
-'{"foo": 5, "bar": 7}' %>% select(a = .foo)
+'{"foo": 5, "bar": 7}' %>% build_object(a = .foo)
 #> {
 #>     "a": 5
 #> }
 ```
 
-More complicated `select()`, using the included dataset `commits`
+More complicated `build_object()`, using the included dataset `commits`
 
 
 ```r
 commits %>%
   index() %>%
-  select(sha = .sha, name = .commit.committer.name)
+  build_object(sha = .sha, name = .commit.committer.name)
 #> [
 #>     {
 #>         "sha": [
@@ -745,7 +836,7 @@ This outputs a few pieces of JSON
 ```r
 (x <- commits %>%
   index() %>%
-  select(sha = .sha, name = .commit.committer.name))
+  build_object(sha = .sha, name = .commit.committer.name))
 #> [
 #>     {
 #>         "sha": [
@@ -844,6 +935,6 @@ combine(x)
 * Please [report any issues or bugs](https://github.com/ropensci/jqr/issues).
 * License: MIT
 * Get citation information for `jqr` in R doing `citation(package = 'jqr')`
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![rofooter](http://www.ropensci.org/public_images/github_footer.png)](http://ropensci.org)

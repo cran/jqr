@@ -73,7 +73,7 @@ str3 %>% haskey(1,2)
 ## ------------------------------------------------------------------------
 commits %>%
   index() %>%
-  select(sha = .sha, name = .commit.committer.name)
+  build_object(sha = .sha, name = .commit.committer.name)
 
 ## ------------------------------------------------------------------------
 '[5,4,2,7]' %>% index() %>% do(. < 4)
@@ -100,4 +100,13 @@ commits %>%
 '[{"foo":1, "bar":14}, {"foo":2, "bar":3}]' %>% maxj
 '[{"foo":1, "bar":14}, {"foo":2, "bar":3}]' %>% maxj(foo)
 '[{"foo":1, "bar":14}, {"foo":2, "bar":3}]' %>% maxj(bar)
+
+## ------------------------------------------------------------------------
+tmp <- tempfile()
+writeLines(c("[123, 456]", "[77, 88, 99]", "[41]"), tmp)
+jq(file(tmp), ".[]")
+
+## ----eval=FALSE----------------------------------------------------------
+#  x <- 'http://jeroen.github.io/data/diamonds.json'
+#  jq(url(x), "select(.carat > 3.5)")
 
