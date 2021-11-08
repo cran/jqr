@@ -1,7 +1,7 @@
-83b0a72deac51a2b80042230d5f92cde *DESCRIPTION
+3927f8186751e8f70ebe6bbfa9498056 *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 21b26e94a94ea35647658116e9c005ab *NAMESPACE
-ba486636aa96ac1cb940cad74be33aa8 *NEWS.md
+b975c587c90924a6ace67f704b1f1f61 *NEWS.md
 1c3121014069f3f3ba424542423a6b58 *R/at.R
 89c5556ef5be54b1e2a88704a92d9462 *R/combine.R
 91add1a3fdc8ebaf2dbfefd26df8444b *R/constructors.R
@@ -64,6 +64,6 @@ f68e3bea65ac4e0b7110081ac3c471da *src/register.c
 d5f42d953965ff6dcac26ef72bf2aba2 *tests/testthat.R
 55ce34d138442136c777de8fe94c6a57 *tests/testthat/helper-jqr.R
 5d5b2c8a1d87babd2285c8ceeb9db5b5 *tests/testthat/test-dsl.R
-e178072969a12908ce481187c30811bc *tests/testthat/test-peek.R
+993eb83bde179c38aeb281bc639971ce *tests/testthat/test-peek.R
 3e4a049d2997bbd3188a36bd0674001d *tests/testthat/test-spec.R
 22c28941e12c8d22d5e9bc7cc50fea30 *tools/winlibs.R
