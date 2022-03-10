@@ -4,15 +4,15 @@ Description: Client for 'jq', a 'JSON' processor (<https://stedolan.github.io/jq
     written in C. 'jq' allows the following with 'JSON' data: index into, parse, 
     do calculations, cut up and filter, change key names and values, perform 
     conditionals and comparisons, and more.
-Version: 1.2.2
+Version: 1.2.3
 Depends: R (>= 3.1.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Language: en-US
 LazyData: true
 Authors@R: c(person("Rich", "FitzJohn", role = "aut", email = "rich.fitzjohn@gmail.com"),
-    person("Jeroen", "Ooms", role = "aut", email = "jeroen@berkeley.edu"),
-    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com"),
+    person("Jeroen", "Ooms", role = c("aut", "cre"), email = "jeroen@berkeley.edu"),
+    person("Scott", "Chamberlain", role = "aut", email = "myrmecocystus@gmail.com"),
     person("Stefan Milton Bache", role = "aut", email = "stefan@stefanbache.dk"))
 URL: https://docs.ropensci.org/jqr/ (docs),
         https://github.com/ropensci/jqr (devel)
@@ -22,11 +22,11 @@ Imports: magrittr, lazyeval
 Suggests: jsonlite, testthat
 RoxygenNote: 7.1.1
 NeedsCompilation: yes
-Packaged: 2021-11-08 20:51:37 UTC; sckott
+Packaged: 2022-03-10 20:12:28 UTC; jeroen
 Author: Rich FitzJohn [aut],
-  Jeroen Ooms [aut],
-  Scott Chamberlain [aut, cre],
+  Jeroen Ooms [aut, cre],
+  Scott Chamberlain [aut],
   Stefan Milton Bache [aut]
-Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
+Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
 Repository: CRAN
-Date/Publication: 2021-11-08 21:10:02 UTC
+Date/Publication: 2022-03-10 22:20:02 UTC
