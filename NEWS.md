@@ -1,3 +1,9 @@
+jqr 1.3.0
+=========
+
+* Windows: update to libjq 1.7
+* Fix test for libjq 1.7 on Debian
+
 jqr 1.2.3
 =========
 
@@ -43,7 +49,7 @@ jqr 1.0.0
 =========
 
 * Unbundle jq: the libjq library and headers are now available on all major platforms.
-  See https://stedolan.github.io/jq/download/ for details. (#59)
+  See https://jqlang.github.io/jq/download/ for details. (#59)
 * Removed a few authors due to n longer including jq in package
 * No longer linking to BH and Rcpp. No longer using/importing Rcpp
 * Use `R_registerRoutines` and `R_useDynamicSymbols` as required for 
