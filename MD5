@@ -1,4 +1,4 @@
-978e76e91b4c7e25eafc6f641bcc54cf *DESCRIPTION
+444f2be7c5ce57b6a80a70eb2ba1a258 *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
 bbd0c8f161e415cf98a036142208502e *NEWS.md
@@ -9,7 +9,7 @@ d8e451e029cdbcabf41838e4ad1602a1 *R/at.R
 4b85af4c8b39f77a0b0c3e4b7a4d09eb *R/flags.R
 26aec6a20324de0b37d6f1b67543ab7e *R/funs.R
 23593a1cc639a3f5d66b2800b06f05b9 *R/index.R
-c0e08ef7d78f3ea9db09fd2c8e545269 *R/jq.R
+48c62ff1cdc72bd89117439847c944f4 *R/jq.R
 fbaedb0f9a186285e1367947ef83471f *R/jqr-package.R
 e983d7e71374d03a8fe38cda941843dd *R/jqr.R
 54fbcb19ddef82aa5010d2a107303c63 *R/keys.R
@@ -38,7 +38,7 @@ a406ad26e75e78ba474acec2ea633778 *man/build.Rd
 fa9a1de2d38c795c0cdeb738d9634a21 *man/dot.Rd
 df898e2d3e354aa02d200c6ea7cf00f4 *man/funs.Rd
 faab9f0fd05b998683e719db76410862 *man/index.Rd
-7e67a10e56dae94598578d5b865daa9f *man/jq.Rd
+dc6214b91c46e5cc7e6d03a5c8d6d15f *man/jq.Rd
 6f34847718660dcd05046c58e2a42a45 *man/jq_flags.Rd
 9697924f843bf1260948f5f300e66868 *man/jqr.Rd
 1d9cf748a18ec3d8bd3c123094ab4a12 *man/jqr_core.Rd
@@ -57,7 +57,7 @@ f533b9bd5a2c2fe402bbbed921ac5bff *man/recurse.Rd
 4b4739c8cb4fc60828a1fca783b6f806 *man/types.Rd
 0d74e9223798ac83c5fe0c98e1907905 *man/vars.Rd
 907343d8176df8e5611a85761a3e91f1 *src/Makevars.in
-3e77294f7c48b810ca77b61bb1e19e00 *src/Makevars.win
+d6fcdd76ca0280cefc5744bd032646b1 *src/Makevars.win
 fdcfe59fd5a891402eaee0e955f1426b *src/jqr.c
 f68e3bea65ac4e0b7110081ac3c471da *src/register.c
 d5f42d953965ff6dcac26ef72bf2aba2 *tests/testthat.R
@@ -65,4 +65,4 @@ d5f42d953965ff6dcac26ef72bf2aba2 *tests/testthat.R
 47c72872113dac53fe03957c70f479ee *tests/testthat/test-dsl.R
 993eb83bde179c38aeb281bc639971ce *tests/testthat/test-peek.R
 62f3ec22e1702f02392118f12dfa1e61 *tests/testthat/test-spec.R
-ccc8277b685e9015642fb88d57bb46c9 *tools/winlibs.R
+7f0ff65bcce8d542ca91943044dcfbdc *tools/winlibs.R
