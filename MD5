@@ -1,7 +1,7 @@
-444f2be7c5ce57b6a80a70eb2ba1a258 *DESCRIPTION
+0d5ba2f11a93ba82867e72d1d2557600 *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
-bbd0c8f161e415cf98a036142208502e *NEWS.md
+72abd767715a5d1755da4b88ef2fc0a1 *NEWS.md
 d8e451e029cdbcabf41838e4ad1602a1 *R/at.R
 89c5556ef5be54b1e2a88704a92d9462 *R/combine.R
 208e3c61d33cfb8f55e00d0dde24fa68 *R/constructors.R
@@ -29,7 +29,7 @@ e502c1651b769a7d5f96d4574056747e *R/types.R
 c3a23f7b498360d44ed1d47598308616 *R/vars.R
 5e6c7711bb04cd9d8faec2da9244e8a4 *R/zzz.R
 bc7baead3b6080f04dc81efd2fe1ff39 *cleanup
-03855be63f3e5c348fd655b8d24232d9 *configure
+a8dfc4faa4607ebaf5b75d8fb03da6b5 *configure
 3963402e019b28dcf5408bf050f156e3 *data/commits.rda
 b691bf9e24a5a733cee01b443fa7c88c *man/at.Rd
 a406ad26e75e78ba474acec2ea633778 *man/build.Rd
