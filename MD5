@@ -1,7 +1,7 @@
-0d5ba2f11a93ba82867e72d1d2557600 *DESCRIPTION
+5e2f026da2c380664f0da9eaa0abb5ef *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
-72abd767715a5d1755da4b88ef2fc0a1 *NEWS.md
+24060f88e49992ce925a953181d97535 *NEWS.md
 d8e451e029cdbcabf41838e4ad1602a1 *R/at.R
 89c5556ef5be54b1e2a88704a92d9462 *R/combine.R
 208e3c61d33cfb8f55e00d0dde24fa68 *R/constructors.R
@@ -58,7 +58,7 @@ f533b9bd5a2c2fe402bbbed921ac5bff *man/recurse.Rd
 0d74e9223798ac83c5fe0c98e1907905 *man/vars.Rd
 907343d8176df8e5611a85761a3e91f1 *src/Makevars.in
 d6fcdd76ca0280cefc5744bd032646b1 *src/Makevars.win
-fdcfe59fd5a891402eaee0e955f1426b *src/jqr.c
+a52fcc7b36a5afd3cf19f40bb1f8cc72 *src/jqr.c
 f68e3bea65ac4e0b7110081ac3c471da *src/register.c
 d5f42d953965ff6dcac26ef72bf2aba2 *tests/testthat.R
 55ce34d138442136c777de8fe94c6a57 *tests/testthat/helper-jqr.R
