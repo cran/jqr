@@ -1,7 +1,7 @@
-5e2f026da2c380664f0da9eaa0abb5ef *DESCRIPTION
+f5c9f3749cfeab8f840ce3facf06c8af *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
-24060f88e49992ce925a953181d97535 *NEWS.md
+aa46053cce3798f9430894db142f3356 *NEWS.md
 d8e451e029cdbcabf41838e4ad1602a1 *R/at.R
 89c5556ef5be54b1e2a88704a92d9462 *R/combine.R
 208e3c61d33cfb8f55e00d0dde24fa68 *R/constructors.R
@@ -14,7 +14,7 @@ fbaedb0f9a186285e1367947ef83471f *R/jqr-package.R
 e983d7e71374d03a8fe38cda941843dd *R/jqr.R
 54fbcb19ddef82aa5010d2a107303c63 *R/keys.R
 00be7ce81fbbd93d1fcf467ad3a642fb *R/logicaltests.R
-356cccd0c34b0243d79bec75e9bde4ba *R/manip.R
+dd9e1b9ca0e4749113b10da9764cc5c3 *R/manip.R
 4afd06a84a76466c5bedfece1a036535 *R/maths.R
 4515d252ef250e8efd8a1c29ea81ddcf *R/paths.R
 eae50c0eba1c7afc34e39535910a0c6a *R/peek.R
@@ -40,11 +40,11 @@ df898e2d3e354aa02d200c6ea7cf00f4 *man/funs.Rd
 faab9f0fd05b998683e719db76410862 *man/index.Rd
 dc6214b91c46e5cc7e6d03a5c8d6d15f *man/jq.Rd
 6f34847718660dcd05046c58e2a42a45 *man/jq_flags.Rd
-9697924f843bf1260948f5f300e66868 *man/jqr.Rd
+3fcee4cec3d9df669ed2d34bf1cac0b5 *man/jqr.Rd
 1d9cf748a18ec3d8bd3c123094ab4a12 *man/jqr_core.Rd
 cf3da629100a7e854b4fdb5209af3d64 *man/keys.Rd
 4816ce63ff7e38ab24b67c14a271ad11 *man/logicaltests.Rd
-24973b5ac133a70e41b1bd19f2f421ab *man/manip.Rd
+6f7dcca80cc8e4059a881c9c8141ab10 *man/manip.Rd
 9d1a1747d11d2ba9fa643b806c0b7df3 *man/maths.Rd
 df37691904cbb67cc654f7b5d49bcd62 *man/paths.Rd
 d0af287a46511d72f8ef4b90926f2455 *man/peek.Rd
