@@ -1,4 +1,4 @@
-f5c9f3749cfeab8f840ce3facf06c8af *DESCRIPTION
+2a025dff2403138a834798fb212338e8 *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
 aa46053cce3798f9430894db142f3356 *NEWS.md
@@ -29,7 +29,7 @@ e502c1651b769a7d5f96d4574056747e *R/types.R
 c3a23f7b498360d44ed1d47598308616 *R/vars.R
 5e6c7711bb04cd9d8faec2da9244e8a4 *R/zzz.R
 bc7baead3b6080f04dc81efd2fe1ff39 *cleanup
-a8dfc4faa4607ebaf5b75d8fb03da6b5 *configure
+fefaa455d04364e4a4728947d0ce6808 *configure
 3963402e019b28dcf5408bf050f156e3 *data/commits.rda
 b691bf9e24a5a733cee01b443fa7c88c *man/at.Rd
 a406ad26e75e78ba474acec2ea633778 *man/build.Rd
@@ -40,7 +40,7 @@ df898e2d3e354aa02d200c6ea7cf00f4 *man/funs.Rd
 faab9f0fd05b998683e719db76410862 *man/index.Rd
 dc6214b91c46e5cc7e6d03a5c8d6d15f *man/jq.Rd
 6f34847718660dcd05046c58e2a42a45 *man/jq_flags.Rd
-3fcee4cec3d9df669ed2d34bf1cac0b5 *man/jqr.Rd
+c8834398db91b31ad4dba8f5b6b21784 *man/jqr.Rd
 1d9cf748a18ec3d8bd3c123094ab4a12 *man/jqr_core.Rd
 cf3da629100a7e854b4fdb5209af3d64 *man/keys.Rd
 4816ce63ff7e38ab24b67c14a271ad11 *man/logicaltests.Rd
