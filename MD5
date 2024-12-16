@@ -1,7 +1,7 @@
-2a025dff2403138a834798fb212338e8 *DESCRIPTION
+51e401905baedd00a02f62895871ae64 *DESCRIPTION
 fe2aeafaec94877e97674d4b89b97e15 *LICENSE
 3299e73a9affc7a33a4cd183207fba14 *NAMESPACE
-aa46053cce3798f9430894db142f3356 *NEWS.md
+3e6607779398f9ae63c33d4cb70e6306 *NEWS.md
 d8e451e029cdbcabf41838e4ad1602a1 *R/at.R
 89c5556ef5be54b1e2a88704a92d9462 *R/combine.R
 208e3c61d33cfb8f55e00d0dde24fa68 *R/constructors.R
@@ -57,7 +57,7 @@ f533b9bd5a2c2fe402bbbed921ac5bff *man/recurse.Rd
 4b4739c8cb4fc60828a1fca783b6f806 *man/types.Rd
 0d74e9223798ac83c5fe0c98e1907905 *man/vars.Rd
 907343d8176df8e5611a85761a3e91f1 *src/Makevars.in
-d6fcdd76ca0280cefc5744bd032646b1 *src/Makevars.win
+46776da0333421c86def597f82bb35fa *src/Makevars.win
 a52fcc7b36a5afd3cf19f40bb1f8cc72 *src/jqr.c
 f68e3bea65ac4e0b7110081ac3c471da *src/register.c
 d5f42d953965ff6dcac26ef72bf2aba2 *tests/testthat.R
